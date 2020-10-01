@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var metade = 2;
+    var dobro = 2;
+    var nome = prompt ("INFORME SEU NOME");
+    var numeroDobro = prompt ( nome + " informe o número a ser dobrado:");
+    var numeroMetade = prompt ( nome + " informe o número a ser dividido");
+    var resultadoDobro = calculaDobro (numeroDobro,dobro);
+    var resultadoMetade = calculaMetade (numeroMetade,metade);
+
+    function calculaDobro (numeroDobro,dobro) {
+
+        return numeroDobro * dobro;
+        
+    }
+
+    function calculaMetade (numeroMetade,metade) {
+
+        return numeroMetade / metade;
+    }
+
+    function pulaLinha() {
+
+        document.write ("<br><br>");
+    }
+
+   
+        document.write ("Olá " + nome + "!" + " Tudo bem?");
+        document.write ("<br><br>");
+        document.write ("O dobro do primeiro número é " + resultadoDobro + ".");
+        document.write ("<br><br>");
+        document.write ("A metade do segundo número é " + resultadoMetade + ".");
+
+</script>
