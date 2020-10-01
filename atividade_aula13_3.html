@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script> 
+
+function pulaLinha () {
+       
+       document.write ("<br>");
+       document.write ("<br>");
+
+   }
+function mostra (frase) {
+
+    document.write (frase);
+    pulaLinha ()
+    }
+
+function pizzaLucro (valorPizza, custoPizza, impostoPizza) {
+
+return valorPizza - custoPizza - impostoPizza;
+} 
+
+var custoPizza = prompt ("Valor de custo da pizza?");
+var valorPizza = prompt ("Valor que a pizza é vendida?");
+var nomePizza = prompt ("Qual o nome da pizza?");
+var impostoPizza = valorPizza * 0.089;
+
+var lucroPizza = pizzaLucro (valorPizza, custoPizza, impostoPizza);
+
+mostra (" Para a pizza de " + nomePizza + " o lucro líquido é de R$" + lucroPizza );
+
+</script>

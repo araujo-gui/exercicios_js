@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script> 
+
+function pulaLinha () {
+       
+       document.write ("<br>");
+       document.write ("<br>");
+
+   }
+function mostra (frase) {
+
+    document.write (frase);
+    pulaLinha ()
+
+}
+
+function calculaLaranjas (laranjas, vizinhos) {
+
+    return laranjas / vizinhos;
+} 
+    
+    var amigosJoselito = prompt ("Quantos vizinhos?");
+    var quantidadeLaranjas = prompt ("Digite aqui a quantidade laranjas");
+    
+
+    var laranjaTotal = calculaLaranjas (quantidadeLaranjas, amigosJoselito);
+
+   mostra (" A quantidade de laranjas por pessoa é de " + laranjaTotal);
+
+    
+
+</script>
