@@ -1,0 +1,60 @@
+<meta charset="UTF-8">
+
+<script>
+        //Declaração de variáveis de vidente
+            var nome = "Guilhermina";
+            var filhos = 01;
+            var cidade = "Viena";
+            var profissao = "advogada de LGPD"
+
+        //Declaração de variáveis de Ilha deserta
+            var item1 = "canga";
+            var item2 = "chinelo";
+            var item3 = "água";
+
+        //
+
+        function pulaLinha () {
+            document.write ("<br><br>");
+        }
+
+
+         function minhavida() {
+
+            document.write ("<h2> VIDENTE </h2>");
+            
+            document.write ("A vidente prevê que " + nome + ", terá " + filhos + " filho, viverá em " + cidade + " trabalhando como " + profissao + "." );
+
+            pulaLinha ();
+        }
+        
+
+
+        function ilhaDeserta() {
+
+            document.write ("<h2> ILHA DESERTA </h2>");
+
+            document.write ("Eu levaria para uma ilha deserta:" + item1 + "," + item2 + "," + item3 + ".");
+
+            pulaLinha ();
+        
+        }
+        
+        
+        function escolhaAnimal (leoa) {
+        
+        document.write ("<h2> ANIMAL </h2>");
+        var animal = "Leoa"
+        document.write (" Num primeiro momento, eu gostaria de ser uma " + animal);
+        pulaLinha ();
+        animal = "Gavião";
+        document.write ("Pensando melhor, prefiro ser uma " + animal);
+
+        }
+
+        minhavida ();
+        ilhaDeserta ();
+        escolhaAnimal ();
+
+        
+</script>
