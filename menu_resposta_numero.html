@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function menu() {
+
+
+        var pedido = prompt("Faça seu pedido");
+
+        if (pedido == 1) {
+            return document.write("Você pediu Refrigerante <br>");
+        } else if (pedido == 2) {
+            return document.write("Você pediu Suco<br>");
+        } else if (pedido == 3) {
+            return document.write("Você pediu Água <br>");
+        } else {
+            return document.write(" Não temos esse item")
+        }
+
+    }
+    document.write("Menu: <br> 1 - Refrigerante <br> 2 - Suco <br> 3 - Água")
+    setTimeout(() => menu(), 500);
+
+
+
+</script>
