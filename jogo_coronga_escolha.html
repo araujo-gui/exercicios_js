@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Jogo Corona</title>
+</head>
+
+<body>
+    <script>
+        alert("Eu acordo em um mundo corongado.");
+
+        var condicao = prompt("Saio de casa?\n 1 - SIM\n 2 - NÃO ");
+
+        function recarregaPagina() {
+
+            document.location.reload(true);
+        }
+
+        if (condicao == "1") {
+
+            alert("VOCÊ MORREU");
+            recarregaPagina();
+        } else if (condicao == "2") {
+
+            alert("Vai pro PC e aprende a programar. ");
+            var condicao2 = prompt("Fez projetos e exercícios?\n 1 - SIM \n 2 - NÃO");
+            if (condicao2 == "1") {
+                alert('Criou o portifólio, fez case de entrevista e passou! :)');
+                recarregaPagina();
+            } else if (condicao2 == "2") {
+                alert("Não conseguiu fazer case das entrevistas");
+                recarregaPagina();
+            } else {
+                alert("Modo Inválido!");
+                recarregaPagina();
+            }
+        } else {
+
+            alert("Comando Inválido!");
+            recarregaPagina();
+        }
+
+    </script>
+</body>
+
+</html>

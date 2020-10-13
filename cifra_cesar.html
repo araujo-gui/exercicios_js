@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var nome = prompt("Escreva aqui o seu nome");
+
+    function cifraDeCesar(nome) {
+        var letraArray = [];
+        var codigoArray = [];
+        var cifraArray = [];
+        var deslocamentoArray = [];
+
+        for (var posicao = 0; posicao < nome.length; posicao++) {
+            var letra = nome[posicao];
+            letraArray.push(letra);
+            var codigo = letra.charCodeAt(letra);
+            codigoArray.push(codigo);
+            var deslocamento = codigo + 1;
+            deslocamentoArray.push(deslocamento);
+            var cifra = String.fromCharCode(deslocamento);
+            cifraArray.push(cifra);
+            console.log(`${letra} = ${codigo} + ${deslocamento} = ${cifra}`);
+
+        }
+
+    }
+
+    cifraDeCesar(nome);
+
+
+</script>
