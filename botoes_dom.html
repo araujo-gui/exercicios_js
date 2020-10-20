@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRIANDO BOTÕES</title>
+
+</head>
+
+<body>
+    <style>
+        #buttons {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <div id="buttons">
+        <button onclick="botao()" type="button">CREATE BUTTON</button>
+    </div>
+    
+    
+    <script>
+        function botao() {
+            for (var i = 0; i <= 19; i++) {
+                var botao = document.createElement("button");
+                var texto = document.createTextNode("BOTÃO NÚMERO: " + i );
+
+                botao.appendChild (texto);
+
+                document.getElementById("buttons").appendChild (botao);
+            }
+
+        }
+    </script>
+</body>
+
+</html>

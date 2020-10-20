@@ -1,0 +1,28 @@
+body {
+    background-color: #f1d4d4;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 50px;
+    color: #c060a1;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.botao {
+    width: 100px;
+    height: 100px ;
+    color: white; 
+    background-color: #6a097d;
+}
+
+.ques01 {
+    text-align: center;
+    color: #6a097d;
+}
